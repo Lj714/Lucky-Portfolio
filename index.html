@@ -2,12 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Lucky Aigbefoh | Portfolio</title>
+  <title>Lucky Aigbefoh | Project Manager & Aspiring Web Developer</title>
+
+  <!-- SEO + mobile friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfolio of Lucky Aigbefoh, project manager and aspiring web developer. Explore my projects, skills, and experience."
+  />
+
+  <!-- Favicon (we'll add the file soon) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- CSS file -->
   <link rel="stylesheet" href="styles.css" />
@@ -18,7 +31,9 @@
       <div class="logo">Lucky Aigbefoh</div>
       <nav>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -38,7 +53,7 @@
 
   <main>
     <div class="container">
-      <section id="about">
+      <section id="about" class="card section-animate">
         <h2>About Me</h2>
         <p>
           I work as a project manager during the day and I'm learning web development. I enjoy planning, organising,
@@ -46,7 +61,39 @@
         </p>
       </section>
 
-      <section id="projects">
+      <section id="skills" class="card section-animate">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Project Management</h3>
+            <ul>
+              <li>Planning & scheduling</li>
+              <li>Stakeholder communication</li>
+              <li>Risk & issue tracking</li>
+              <li>Team coordination</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Web Development (Learning)</h3>
+            <ul>
+              <li>HTML & CSS basics</li>
+              <li>Responsive layouts</li>
+              <li>JavaScript fundamentals</li>
+              <li>Version control with Git & GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul>
+              <li>Excel / Sheets</li>
+              <li>Project tracking tools</li>
+              <li>Documentation & reporting</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="card section-animate">
         <h2>Projects</h2>
         <div class="projects-grid">
           <article class="project-card">
@@ -54,6 +101,7 @@
             <p>
               Supporting individuals and businesses to plan, organise, and deliver successful projects from start to finish.
             </p>
+            <a href="project-management.html" class="project-link">View details</a>
           </article>
 
           <article class="project-card">
@@ -61,19 +109,46 @@
             <p>
               Helping people connect with reliable handymen for repairs, maintenance, and small improvement jobs.
             </p>
+            <a href="handyman.html" class="project-link">View details</a>
           </article>
 
-          <!-- Future project example -->
           <article class="project-card">
             <h3>Web Development Portfolio</h3>
             <p>
               A growing collection of websites and web apps I build as I learn HTML, CSS, and JavaScript.
             </p>
+            <a href="web-portfolio.html" class="project-link">View details</a>
           </article>
         </div>
       </section>
 
-      <section id="contact">
+      <section id="experience" class="card section-animate">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Project Manager</h3>
+              <p class="timeline-date">Year – Present</p>
+              <p>
+                Managing projects, coordinating teams, and ensuring delivery within scope, budget, and timelines.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Web Development Journey</h3>
+              <p class="timeline-date">2025 – Present</p>
+              <p>
+                Learning HTML, CSS, JavaScript, and building real projects like this portfolio website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="card section-animate">
         <h2>Contact</h2>
         <p>
           If you'd like to work together or just say hello, feel free to reach out.
@@ -86,7 +161,7 @@
     </div>
   </main>
 
-   <footer>
+  <footer>
     <p>© 2025 Lucky Aigbefoh</p>
   </footer>
 
@@ -94,4 +169,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-

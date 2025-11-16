@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Global styles */
 * {
   box-sizing: border-box;
 }
@@ -11,7 +10,7 @@ body {
   font-family: "Poppins", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0f172a; /* dark blue/grey background */
+  background-color: #0f172a;
   color: #111827;
 }
 
@@ -110,8 +109,8 @@ main .container {
   margin-top: 24px;
 }
 
-/* Sections */
-section {
+/* Reusable card style */
+.card {
   background-color: #ffffff;
   padding: 20px 18px;
   margin-bottom: 18px;
@@ -124,7 +123,23 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Projects section */
+/* Skills */
+.skills-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.skill-group h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.skill-group ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+/* Projects */
 .projects-grid {
   display: grid;
   gap: 16px;
@@ -143,9 +158,52 @@ h2 {
 }
 
 .project-card p {
-  margin: 0;
+  margin: 0 0 10px;
   font-size: 0.95rem;
   color: #4b5563;
+}
+
+.project-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* Timeline (Experience) */
+.timeline {
+  border-left: 2px solid #e5e7eb;
+  margin-left: 10px;
+  padding-left: 16px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -13px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+}
+
+.timeline-content h3 {
+  margin: 0 0 4px;
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0 0 6px;
 }
 
 /* Contact */
@@ -167,6 +225,18 @@ footer {
   font-size: 0.85rem;
 }
 
+/* Scroll animations */
+.section-animate {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Responsive (for mobiles) */
 @media (max-width: 600px) {
   .nav-bar {
@@ -174,9 +244,15 @@ footer {
     align-items: flex-start;
   }
 
+  nav {
+    margin-top: 8px;
+  }
+
   nav a {
     margin-left: 0;
     margin-right: 12px;
+    display: inline-block;
+    margin-bottom: 4px;
   }
 
   .hero {
@@ -185,5 +261,10 @@ footer {
 
   .hero h1 {
     font-size: 1.6rem;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
