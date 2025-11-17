@@ -27,16 +27,20 @@
 </head>
 <body>
   <header>
-    <div class="container nav-bar">
-      <div class="logo">Lucky Aigbefoh</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <div class="container nav-bar">
+    <div class="logo">Lucky Aigbefoh</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      🌙
+    </button>
+  </div>
 
     <!-- Hero section -->
     <div class="container hero">
@@ -96,7 +100,42 @@
           </div>
         </div>
       </section>
-
+	  
+	  <!-- SERVICES -->
+	        <section id="services" class="card section-animate">
+        <h2>Services</h2>
+        <p>
+          I combine project management experience with growing web development skills 
+          to support individuals and small businesses.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Project Support</h3>
+            <ul>
+              <li>Planning and scheduling work</li>
+              <li>Organising tasks and deadlines</li>
+              <li>Tracking progress and risks</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Process & Organisation</h3>
+            <ul>
+              <li>Setting up simple workflows</li>
+              <li>Creating basic reports and summaries</li>
+              <li>Improving how work is organised</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Web Support (Learning)</h3>
+            <ul>
+              <li>Simple websites like this portfolio</li>
+              <li>Basic edits to existing sites</li>
+              <li>Helping translate ideas into web pages</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+	
       <!-- PROJECTS -->
       <section id="projects" class="card section-animate">
         <h2>Projects</h2>
@@ -161,13 +200,37 @@
       </section>
 
       <!-- CONTACT -->
-      <section id="contact" class="card section-animate">
+            <section id="contact" class="card section-animate">
         <h2>Contact</h2>
         <p>
           If you'd like to work together or just say hello, feel free to reach out.
         </p>
-        <p>
-          You can email me at:
+
+        <form
+          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="_replyto" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+        <p style="margin-top: 10px; font-size: 0.9rem;">
+          Or email me directly at
           <a href="mailto:l.aigbefoh@gmail.com">l.aigbefoh@gmail.com</a>
         </p>
       </section>

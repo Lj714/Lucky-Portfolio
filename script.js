@@ -31,3 +31,29 @@ if ("IntersectionObserver" in window) {
   // Fallback if IntersectionObserver is not supported
   animatedSections.forEach((section) => section.classList.add("visible"));
 }
+
+// Dark mode toggle
+const themeToggleBtn = document.getElementById("theme-toggle");
+const rootElement = document.documentElement;
+
+// Load saved theme
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  rootElement.setAttribute("data-theme", "dark");
+  if (themeToggleBtn) themeToggleBtn.textContent = "☀️";
+}
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener("click", () => {
+    const isDark = rootElement.getAttribute("data-theme") === "dark";
+    if (isDark) {
+      rootElement.removeAttribute("data-theme");
+      themeToggleBtn.textContent = "🌙";
+      localStorage.setItem("theme", "light");
+    } else {
+      rootElement.setAttribute("data-theme", "dark");
+      themeToggleBtn.textContent = "☀️";
+      localStorage.setItem("theme", "dark");
+    }
+  });
+}
