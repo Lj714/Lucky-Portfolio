@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Find Your Next Handyman | Simple Project Concept by Lucky Aigbefoh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Concept landing page for 'Find Your Next Handyman' – a simple way to connect busy people with reliable local handymen."
+  />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <div class="logo">Find Your Next Handyman</div>
+      <nav>
+        <a href="#how-it-works">How it works</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#contact">Register interest</a>
+        <a href="index.html">Back to Portfolio</a>
+      </nav>
+    </div>
+
+    <div class="container hero">
+      <div class="hero-text">
+        <p class="tagline">Concept Project • By Lucky Aigbefoh</p>
+        <h1>A simple way to find a reliable handyman when you actually need one.</h1>
+        <p class="hero-subtitle">
+          Instead of searching endlessly or asking around, this concept aims to give people a small, trusted list of handymen they can contact quickly.
+        </p>
+        <a href="#contact" class="btn-primary">Register your interest</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="how-it-works" class="card section-animate">
+        <h2>How it could work</h2>
+        <p>
+          The idea is to keep things simple for both the person needing help and the handyman providing it.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>1. Choose your job type</h3>
+            <ul>
+              <li>Small repairs</li>
+              <li>Maintenance jobs</li>
+              <li>Furniture assembly</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>2. See trusted handymen</h3>
+            <ul>
+              <li>Basic profiles</li>
+              <li>Service area</li>
+              <li>Availability</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>3. Request contact</h3>
+            <ul>
+              <li>Send a simple enquiry</li>
+              <li>Share the type of job</li>
+              <li>Get a call or message back</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="card section-animate">
+        <h2>Why this could help</h2>
+        <ul>
+          <li>Busy people don’t have time to research lots of options.</li>
+          <li>Handymen can receive clearer, more focused enquiries.</li>
+          <li>A small, curated list can build more trust over time.</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="card section-animate">
+        <h2>Register your interest</h2>
+        <p>
+          This is a concept project I’m exploring as part of my learning. 
+          If you're a handyman or someone who often needs small jobs done and this idea interests you, feel free to reach out.
+        </p>
+
+        <form
+          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="role">Are you a…</label>
+            <select id="role" name="role">
+              <option value="customer">Customer (needs jobs done)</option>
+              <option value="handyman">Handyman / tradesperson</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Send</button>
+        </form>
+
+        <p style="margin-top: 10px; font-size: 0.9rem;">
+          Or email me directly at
+          <a href="mailto:l.aigbefoh@gmail.com">l.aigbefoh@gmail.com</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Lucky Aigbefoh</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
