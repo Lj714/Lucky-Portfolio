@@ -179,9 +179,11 @@ h2 {
 }
 
 .project-card {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background-color: var(--bg-card);
   margin: 0 0 10px;
-  font-size: 0.95rem;
-  color: var(--text-muted);
 }
 
 .project-card h3 {
@@ -192,7 +194,7 @@ h2 {
 .project-card p {
   margin: 0 0 10px;
   font-size: 0.95rem;
-  color: #4b5563;
+  color: var(--text-muted);
 }
 
 .project-link {
