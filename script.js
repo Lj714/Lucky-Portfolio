@@ -1,59 +1,80 @@
-// Log to confirm JavaScript is working
-console.log("Hello from Lucky's portfolio!");
-
-// Automatically set the current year in the footer
 const footer = document.querySelector("footer p");
 if (footer) {
-  const currentYear = new Date().getFullYear();
-  footer.textContent = `© ${currentYear} Lucky Aigbefoh`;
+  const year = new Date().getFullYear();
+  footer.textContent = `© ${year} Lucky Aigbefoh`;
 }
 
-// Simple scroll animation for sections
 const animatedSections = document.querySelectorAll(".section-animate");
 
 if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
+  const sectionObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
-          observer.unobserve(entry.target); // only animate once
+          observer.unobserve(entry.target);
         }
       });
     },
-    {
-      threshold: 0.2,
-    }
+    { threshold: 0.2 }
   );
 
-  animatedSections.forEach((section) => observer.observe(section));
+  animatedSections.forEach(section => sectionObserver.observe(section));
 } else {
-  // Fallback if IntersectionObserver is not supported
-  animatedSections.forEach((section) => section.classList.add("visible"));
+  animatedSections.forEach(section => section.classList.add("visible"));
 }
 
-// Dark mode toggle
 const themeToggleBtn = document.getElementById("theme-toggle");
-const rootElement = document.documentElement;
-
-// Load saved theme
+const root = document.documentElement;
 const savedTheme = localStorage.getItem("theme");
+
 if (savedTheme === "dark") {
-  rootElement.setAttribute("data-theme", "dark");
+  root.setAttribute("data-theme", "dark");
   if (themeToggleBtn) themeToggleBtn.textContent = "☀️";
 }
 
 if (themeToggleBtn) {
   themeToggleBtn.addEventListener("click", () => {
-    const isDark = rootElement.getAttribute("data-theme") === "dark";
+    const isDark = root.getAttribute("data-theme") === "dark";
     if (isDark) {
-      rootElement.removeAttribute("data-theme");
+      root.removeAttribute("data-theme");
       themeToggleBtn.textContent = "🌙";
       localStorage.setItem("theme", "light");
     } else {
-      rootElement.setAttribute("data-theme", "dark");
+      root.setAttribute("data-theme", "dark");
       themeToggleBtn.textContent = "☀️";
       localStorage.setItem("theme", "dark");
     }
   });
 }
+
+function highlightContact() {
+  const contactSection = document.getElementById("contact");
+  if (!contactSection) return;
+
+  contactSection.classList.remove("section-highlight");
+  void contactSection.offsetWidth;
+  contactSection.classList.add("section-highlight");
+
+  setTimeout(() => {
+    contactSection.classList.remove("section-highlight");
+  }, 1400);
+}
+
+if (window.location.hash === "#contact") {
+  window.addEventListener("load", highlightContact);
+}
+
+window.addEventListener("hashchange", () => {
+  if (window.location.hash === "#contact") highlightContact();
+});
+
+const contactButtons = document.querySelectorAll(
+  'a[href="#contact"], #contact-cta'
+);
+
+contactButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    setTimeout(highlightContact, 120);
+  });
+});
