@@ -5,13 +5,19 @@
   <title>Lucky Aigbefoh | Project Manager & Aspiring Web Developer</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Lucky Aigbefoh, project manager and aspiring web developer. Explore my projects, skills, and experience." />
+  <meta
+    name="description"
+    content="Portfolio of Lucky Aigbefoh, project manager and aspiring web developer. Explore my projects, skills, and experience."
+  />
 
   <link rel="icon" href="favicon.png?v=2" type="image/png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -32,14 +38,30 @@
     </div>
 
     <div class="container hero">
-      <div class="hero-text">
-        <p class="tagline">Project Manager • Aspiring Web Developer • London, UK</p>
-        <h1>Helping teams deliver projects and learning to build for the web.</h1>
-        <p class="hero-subtitle">
-          Since 2018 I've been managing projects and coordinating teams. Now I'm applying the same organised mindset to front-end
-          development, starting with simple, clean websites like this one.
-        </p>
-        <a href="#contact" class="btn-primary" id="contact-cta">Contact Me</a>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="tagline">Project Manager • Aspiring Web Developer • London, UK</p>
+          <h1>Helping teams deliver projects and learning to build for the web.</h1>
+          <p class="hero-subtitle">
+            Since 2018 I've been managing projects and coordinating teams. Now I'm applying the same
+            organised mindset to front-end development, starting with simple, clean websites like this one.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary" id="contact-cta">Contact Me</a>
+            <a href="#projects" class="btn-secondary">View my projects</a>
+          </div>
+          <div class="hero-badge">
+            <span class="hero-pin"></span>
+            <span>Open to conversations about projects and simple websites</span>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="hero-image-inner">
+            <div class="hero-ring"></div>
+            <div class="hero-initials">LA</div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -47,24 +69,27 @@
   <main>
     <div class="container">
 
+      <!-- About -->
       <section id="about" class="card section-animate">
         <h2>About Me</h2>
         <p>
-          I'm a project manager based in London, UK, with experience since 2018 helping teams deliver work on time and to a high standard.
-          I enjoy bringing structure to ideas, turning them into clear plans and actions.
-          Alongside this, I'm actively learning web development so I can better understand and support digital projects.
+          I'm a project manager based in London, UK, with experience since 2018 helping teams deliver work
+          on time and to a high standard. I enjoy bringing structure to ideas, turning them into clear plans
+          and actions. Alongside this, I'm actively learning web development so I can better understand and
+          support digital projects.
         </p>
       </section>
 
+      <!-- Skills -->
       <section id="skills" class="card section-animate">
         <h2>Skills</h2>
         <div class="skills-grid">
           <div class="skill-group">
             <h3>Project Management</h3>
             <ul>
-              <li>Planning & scheduling</li>
+              <li>Planning &amp; scheduling</li>
               <li>Stakeholder communication</li>
-              <li>Risk & issue tracking</li>
+              <li>Risk &amp; issue tracking</li>
               <li>Team coordination</li>
             </ul>
           </div>
@@ -72,10 +97,10 @@
           <div class="skill-group">
             <h3>Web Development (Learning)</h3>
             <ul>
-              <li>HTML & CSS basics</li>
+              <li>HTML &amp; CSS basics</li>
               <li>Responsive layouts</li>
               <li>JavaScript fundamentals</li>
-              <li>Version control with Git & GitHub</li>
+              <li>Version control with Git &amp; GitHub</li>
             </ul>
           </div>
 
@@ -84,21 +109,22 @@
             <ul>
               <li>Excel / Sheets</li>
               <li>Project tracking tools</li>
-              <li>Documentation & reporting</li>
+              <li>Documentation &amp; reporting</li>
             </ul>
           </div>
         </div>
       </section>
 
+      <!-- Services -->
       <section id="services" class="card section-animate">
         <h2>Services</h2>
         <p>
-          I combine hands-on project management experience with growing web skills to support individuals and small businesses 
-          who need help planning, organising, or starting simple online projects.
+          I combine hands-on project management experience with growing web skills to support individuals
+          and small businesses who need help planning, organising, or starting simple online projects.
         </p>
         <div class="skills-grid">
           <div class="skill-group">
-            <h3>Project Planning & Support</h3>
+            <h3>Project Planning &amp; Support</h3>
             <ul>
               <li>Planning and scheduling work</li>
               <li>Organising tasks and deadlines</li>
@@ -107,7 +133,7 @@
           </div>
 
           <div class="skill-group">
-            <h3>Process & Organisation</h3>
+            <h3>Process &amp; Organisation</h3>
             <ul>
               <li>Setting up simple workflows</li>
               <li>Creating basic reports and summaries</li>
@@ -126,6 +152,7 @@
         </div>
       </section>
 
+      <!-- Projects -->
       <section id="projects" class="card section-animate">
         <h2>Projects</h2>
         <div class="projects-grid">
@@ -133,68 +160,70 @@
           <article class="project-card">
             <h3>Project Management Services</h3>
             <p>
-              Planning, organising, and coordinating small to medium projects for individuals and businesses, 
+              Planning, organising, and coordinating small to medium projects for individuals and businesses,
               with a focus on clarity, timelines, and communication.
             </p>
-            <a href="project-management.html" class="project-link">View details</a>
+            <a href="project-management.html" class="btn-secondary">View details</a>
           </article>
 
           <article class="project-card">
             <h3>Find Your Next Handyman</h3>
             <p>
-              Concept for a simple platform that connects busy homeowners with reliable local handymen for repairs, 
-              maintenance, and small jobs.
+              Concept for a simple platform that connects busy homeowners with reliable local handymen for
+              repairs, maintenance, and small jobs.
             </p>
-            <a href="handyman.html" class="project-link">View details</a>
+            <a href="handyman.html" class="btn-secondary">View details</a>
           </article>
 
           <article class="project-card">
             <h3>Web Development Portfolio</h3>
             <p>
-              A growing collection of websites and practice projects I build as I learn HTML, CSS, and JavaScript, 
-              starting from this portfolio.
+              A growing collection of websites and practice projects I build as I learn HTML, CSS, and
+              JavaScript, starting from this portfolio.
             </p>
-            <a href="web-portfolio.html" class="project-link">View details</a>
+            <a href="web-portfolio.html" class="btn-secondary">View details</a>
           </article>
 
         </div>
       </section>
 
+      <!-- Experience -->
       <section id="experience" class="card section-animate">
         <h2>Experience</h2>
         <div class="timeline">
 
           <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Project Manager</h3>
-              <p class="timeline-date">2018 – Present</p>
-              <p>
-                Managing projects, coordinating teams, and ensuring delivery within scope, 
-                budget, and timelines for clients and stakeholders.
-              </p>
-            </div>
+            <div class="timeline-item-marker"></div>
+            <h3>Project Manager</h3>
+            <span>2018 – Present</span>
+            <p>
+              Managing projects, coordinating teams, and ensuring delivery within scope, budget, and
+              timelines for clients and stakeholders.
+            </p>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Web Development Journey</h3>
-              <p class="timeline-date">2025 – Present</p>
-              <p>
-                Learning HTML, CSS, JavaScript, and building real projects like this portfolio website.
-              </p>
-            </div>
+            <div class="timeline-item-marker"></div>
+            <h3>Web Development Journey</h3>
+            <span>2025 – Present</span>
+            <p>
+              Learning HTML, CSS, JavaScript, and building real projects like this portfolio website.
+            </p>
           </div>
 
         </div>
       </section>
 
+      <!-- Contact -->
       <section id="contact" class="card section-animate">
         <h2>Contact</h2>
         <p>If you'd like to work together or just say hello, feel free to reach out.</p>
 
-        <form action="https://formspree.io/f/mwpyeprl" method="POST" class="contact-form">
+        <form
+          action="https://formspree.io/f/mwpyeprl"
+          method="POST"
+          class="contact-form"
+        >
           <div class="form-row">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
@@ -218,7 +247,9 @@
   </main>
 
   <footer>
-    <p>© 2025 Lucky Aigbefoh</p>
+    <div class="container">
+      <p>© 2025 Lucky Aigbefoh</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
