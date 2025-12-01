@@ -417,23 +417,23 @@ footer a:hover {
   text-decoration: underline;
 }
 
-body[data-theme="dark"] header {
+[data-theme="dark"] header {
   color: #e5e7eb;
 }
 
-body[data-theme="dark"] .card {
+[data-theme="dark"] .card {
   background-color: #020617;
   border-color: rgba(148, 163, 184, 0.25);
 }
 
-body[data-theme="dark"] .card p,
-body[data-theme="dark"] .card-meta,
-body[data-theme="dark"] .timeline-item span,
-body[data-theme="dark"] .timeline-item p {
+[data-theme="dark"] .card p,
+[data-theme="dark"] .card-meta,
+[data-theme="dark"] .timeline-item span,
+[data-theme="dark"] .timeline-item p {
   color: #cbd5f5;
 }
 
-body[data-theme="dark"] footer {
+[data-theme="dark"] footer {
   border-top-color: rgba(15, 23, 42, 0.9);
 }
 
