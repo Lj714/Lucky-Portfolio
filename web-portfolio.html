@@ -21,48 +21,72 @@
 </head>
 
 <body>
-  <main class="container" style="margin-top: 40px;">
-    <section class="card section-animate">
-      <h1>Web Development Portfolio</h1>
+  <header>
+    <div class="container nav-bar">
+      <div class="logo">Lucky Aigbefoh</div>
+      <nav>
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <span>🌙</span>
+        <span>Theme</span>
+      </button>
+    </div>
+  </header>
 
-      <p>
-        This page will showcase the websites and web applications I build as I learn HTML, CSS,
-        JavaScript, and other front-end tools. It will track my progress from beginner to more confident developer.
-      </p>
+  <main>
+    <div class="container" style="margin-top: 30px;">
+      <section class="card section-animate">
+        <h1>Web Development Portfolio</h1>
 
-      <h2>Current Focus</h2>
-      <ul>
-        <li>Building clean, simple layouts with HTML and CSS</li>
-        <li>Improving responsive design for mobile and desktop</li>
-        <li>Practising JavaScript through small, focused projects</li>
-      </ul>
+        <p>
+          This page will showcase the websites and web applications I build as I learn HTML, CSS,
+          JavaScript, and other front-end tools. It will track my progress from beginner to more confident developer.
+        </p>
 
-      <h2>Planned Projects</h2>
-      <ul>
-        <li>Multi-page personal and service websites</li>
-        <li>Small interactive features such as forms, toggles, and filters</li>
-        <li>Landing pages for project ideas like the Handyman Finder</li>
-      </ul>
+        <h2>Current Focus</h2>
+        <ul>
+          <li>Building clean, simple layouts with HTML and CSS</li>
+          <li>Improving responsive design for mobile and desktop</li>
+          <li>Practising JavaScript through small, focused projects</li>
+        </ul>
 
-      <h2>Future Goals</h2>
-      <ul>
-        <li>Learn a front-end framework such as React</li>
-        <li>Connect front-end projects to simple APIs</li>
-        <li>Build more complete apps with real user flows</li>
-      </ul>
+        <h2>Planned Projects</h2>
+        <ul>
+          <li>Multi-page personal and service websites</li>
+          <li>Small interactive features such as forms, toggles, and filters</li>
+          <li>Landing pages for project ideas like the Handyman Finder</li>
+        </ul>
 
-      <p>
-        As I complete more projects, I will add links, screenshots, and descriptions here.
-      </p>
+        <h2>Future Goals</h2>
+        <ul>
+          <li>Learn a front-end framework such as React</li>
+          <li>Connect front-end projects to simple APIs</li>
+          <li>Build more complete apps with real user flows</li>
+        </ul>
 
-      <p>
-        <a href="index.html" class="project-link">← Back to portfolio</a>
-      </p>
-    </section>
+        <p>
+          As I complete more projects, I will add links, screenshots, and descriptions here.
+        </p>
+
+        <p>
+          <a href="index.html" class="project-link">← Back to portfolio</a>
+          &nbsp;|&nbsp;
+          <a href="index.html#contact" class="project-link">Go to contact</a>
+        </p>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <p>© 2025 Lucky Aigbefoh</p>
+    <div class="container">
+      <p>© 2025 Lucky Aigbefoh</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
